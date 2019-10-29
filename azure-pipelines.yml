@@ -12,3 +12,4 @@ steps:
     repository: 'weaveworksdemos/front-end'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: 'latest'
