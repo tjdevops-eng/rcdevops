@@ -12,14 +12,3 @@ steps:
     repository: 'weaveworksdemos/front-end'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-
-- task: Kubernetes@1
-  inputs:
-    connectionType: 'Kubernetes Service Connection'
-    kubernetesServiceEndpoint: 'rckube'
-    namespace: 'sock-shop'
-    command: 'set'
-    arguments: 'image deployment/front-end front-end=rcdevops.azurecr.io/weaveworksdemos/front-end:latest'
-    secretType: 'dockerRegistry'
-    containerRegistryType: 'Azure Container Registry'
-
