@@ -12,3 +12,6 @@ steps:
     repository: 'weaveworksdemos/front-end'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
