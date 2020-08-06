@@ -12,4 +12,4 @@ steps:
     repository: 'sudhakarkethireddy/front-end'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-    tags: $(Build.BuildNumber)
+    tags: 1.2
