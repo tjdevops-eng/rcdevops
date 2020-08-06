@@ -9,7 +9,7 @@ steps:
   displayName: Build Docker image
   inputs:
     containerRegistry: 'rcdocker'
-    repository: 'weaveworksdemos/front-end'
+    repository: 'sudhakarkethireddy/front-end'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     tags: $(Build.BuildNumber)
